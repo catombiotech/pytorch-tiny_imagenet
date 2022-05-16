@@ -12,7 +12,14 @@ The 2nd homework for 'the basics of python and deep learning'
 **按照commit.diff中的改动顺序！**
 1. 根据改动添加了的调包，以及tensorboard记录writer。
 2. 添加命令行参数`result_name`，方便我在evaluate更改输出npy的名字。
-3. 减去图像变换中随机的翻转，防止欠拟合。
-4. 利用更新后的验证集读取方式读取val_loader。
-5. 原文件中不小心插入几个字母了（train_loader->train_loacondader）。
-6. 
+3. **更改模型输出维度：num_classes=200**。
+4. 减去图像变换中随机的翻转，防止欠拟合。
+5. 利用更新后的验证集读取方式读取val_loader。
+6. 原文件中不小心插入几个字母了（train_loader->train_loacondader）。
+7. 已注释掉。
+8. 清空显卡缓存，之前训练时因为batch size设置偏大导致显存不够。
+9. tensorboard添加训练集过程。
+10. 接收evaluate过程中模型预测结果。
+11. 将每个batch预测结果添加到10中的变量。
+12. 保存10中变量为npy文件，即check_1,2.npy。
+13. 修改验证集读取方式的类。
